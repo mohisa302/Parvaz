@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-# 🖺 Portfolio
+# Parvaz
 
 ### 📗 Table of Contents
 
