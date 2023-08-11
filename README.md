@@ -15,9 +15,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [Protofilio] <a name="about-project"></a>
+# 📖 [Parvaz] <a name="about-project"></a>
 
-**[Protofilio]** everything you want to know about me!
+**[Parvaz]** Visit Parvaz company site!
 
 ## 🛠 Built With <a name="built-with"></a>
 
