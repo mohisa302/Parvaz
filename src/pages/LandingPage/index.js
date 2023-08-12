@@ -7,8 +7,7 @@ import { ProfessionalExpComp } from "../../components/ProfessionalExpComp";
 import { ServicesComp } from "../../components/ServicesComp";
 import { WorldTourComp } from "../../components/WorlTourComp";
 
-export const LandingPage = () => {
-  return (
+export const LandingPage = (
     <div className="w-screen h-screen">
       <ContactUsComp />
       <HeaderComp />
@@ -19,4 +18,3 @@ export const LandingPage = () => {
       <FooterComp />
     </div>
   );
-};
