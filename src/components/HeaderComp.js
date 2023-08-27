@@ -1,7 +1,6 @@
 import React from 'react';
 import FlayInnImage1 from '../assets/back1.jpg';
 import FlayInnImage2 from '../assets/flyinn.jpeg';
-import { ButtonYellowComp } from './ButtonYellowComp';
 import { HeaderNavComp } from './HeaderNavComp';
 import { useState, useEffect, useRef } from 'react';
 
@@ -38,7 +37,6 @@ export const HeaderComp = () => {
             <p className="text-white text-sm">
               full services airline offering <span className="text-yellow-400">reduce fairs.</span>
             </p>
-            <ButtonYellowComp label={'FIND FLIGHT'} extraStyle={'flex mt-5'} />
           </div>
         </div>
       </div>
