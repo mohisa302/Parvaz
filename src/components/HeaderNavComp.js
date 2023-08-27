@@ -10,7 +10,7 @@ export const HeaderNavComp = () => {
           <p className="text-sm text-white text-center">BUDGET</p>
         </div>
       </div>
-      <div className="col-span-3 p-5 flex flex-end items-center mr-5">
+      <div className="col-span-3 p-5 flex justify-end	 items-center mr-5">
         <Link to="ABOUT US" smooth={true} duration={500} className="ml-5">
           <div className="hover:border-b-[2px] hover:border-b-yellow-400 hover:text-xl pb-2">
             <p className="text-white">HOME</p>

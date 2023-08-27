@@ -27,7 +27,7 @@ export const HeaderComp = () => {
     <div className="w-full h-[80%] bg-black bg-no-repeat bg-cover" ref={imageRef}>
       <HeaderNavComp />
       <div className="grid grid-cols-2 h-[80%]">
-        <div className="flex p-5">
+        <div className="flex items-center p-5">
           <div>
             <p className="text-white text-xl">FLYING BUDGET</p>
             <p className="text-white text-5xl">We Are Very Reliable</p>
