@@ -15,7 +15,7 @@ export const App = () => (
           <Route path="/building" element={<LandingPage />}></Route>
           <Route path="/environment" element={<LandingPage />}></Route>
           <Route path="/transportation" element={<LandingPage />}></Route>
-          <Route path="/medicine" element={<LandingPage />}></Route>
+          <Route path="/health" element={<LandingPage />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

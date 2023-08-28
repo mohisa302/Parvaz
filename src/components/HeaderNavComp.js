@@ -36,9 +36,9 @@ export const HeaderNavComp = () => {
               <p className="text-black">Environment</p>
             </div>
           </NavLink>
-          <NavLink to="/medicine" className="ml-5">
+          <NavLink to="/health" className="ml-5">
             <div className="hover:border-b-[2px] hover:border-b-yellow-400 hover:text-xl pb-2">
-              <p className="text-black">Medicine</p>
+              <p className="text-black">Health</p>
             </div>
           </NavLink>
           <NavLink to="/transportation" className="ml-5">
