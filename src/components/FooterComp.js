@@ -1,36 +1,31 @@
-import React from "react";
-import { BsFacebook } from "react-icons/bs";
-import {
-  AiFillTwitterCircle,
-  AiFillInstagram,
-  AiFillLinkedin,
-} from "react-icons/ai";
+import React from 'react';
+import { BsFacebook } from 'react-icons/bs';
+import { AiFillTwitterCircle, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 
 export const FooterComp = () => {
   return (
-    <div className="h-[50%] px-20 py-5 bg-slate-600">
+    <div name="CONTACT" className="h-[50%] px-20 py-5 bg-slate-600">
       <div class="grid grid-cols-4 gap-10 text-white h-[80%]">
         <div>
           <p className="text-2xl font-bold">Fiyinn</p>
           <p className="text-sm">BUDGET</p>
           <p className="mt-5 text-sm">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum{" "}
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum{' '}
           </p>
           <div className="flex h-14 items-center">
             <a href="#">
               <BsFacebook size={20} />
             </a>
             <a href="#">
-              {" "}
+              {' '}
               <AiFillTwitterCircle size={20} className="ml-2" />
             </a>
             <a href="#">
-              {" "}
+              {' '}
               <AiFillInstagram size={20} className="ml-2" />
             </a>
             <a href="#">
-              {" "}
+              {' '}
               <AiFillLinkedin size={20} className="ml-2" />
             </a>
           </div>

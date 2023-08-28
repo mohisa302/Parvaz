@@ -12,7 +12,7 @@ export const HeaderComp = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
-    }, 7000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
@@ -20,7 +20,7 @@ export const HeaderComp = () => {
   useEffect(() => {
     const imageElement = imageRef.current;
     imageElement.style.backgroundImage = `url(${backgroundImages[currentImageIndex]})`;
-  }, [currentImageIndex]);
+  }, [backgroundImages, currentImageIndex]);
 
   return (
     <div className="w-full h-[80%] bg-black bg-no-repeat bg-cover" ref={imageRef}>

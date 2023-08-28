@@ -31,11 +31,11 @@ export const HeaderNavComp = () => {
             <p className="text-white">FLIGHT</p>
           </div>
         </Link>
-        <a href="index.html" className="ml-5">
+        <Link to="CONTACT" smooth={true} duration={500} className="ml-5">
           <div className="hover:border-b-[2px] hover:border-b-yellow-400 hover:text-xl pb-2">
             <p className="text-white">Contact</p>
           </div>
-        </a>
+        </Link>
       </div>
     </div>
   );
