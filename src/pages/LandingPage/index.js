@@ -15,7 +15,7 @@ export const LandingPage = () => {
       <ServicesComp />
       <LowestFareComp />
       <ProfessionalExpComp />
-      <WorldTourComp />
+      {/* <WorldTourComp /> */}
       <FooterComp />
     </div>
   );

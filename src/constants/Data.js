@@ -96,57 +96,41 @@ export const Background = [
 ];
 
 export const Contents = [
-  [
-    {
-      id: 1,
-      heading: 'Flights to Dehli',
-      price: '$42',
-      image: DehliImage,
-    },
-  ],
-  [
-    {
-      id: 2,
-      heading: 'Flights to Karachi',
-      price: '$42',
-      image: KarachiImage,
-    },
-  ],
-  [
-    {
-      id: 3,
-      heading: 'Flights to Karachi',
-      price: '$42',
-      image: KarachiImage,
-    },
-  ],
-
-  [
-    {
-      id: 4,
-      heading: 'Flights to Karachi',
-      price: '$42',
-      image: KarachiImage,
-    },
-  ],
-
-  [
-    {
-      id: 5,
-      heading: 'Flights to Karachi',
-      price: '$42',
-      image: KarachiImage,
-    },
-  ],
-
-  [
-    {
-      id: 2,
-      heading: 'Flights to Karachi',
-      price: '$42',
-      image: KarachiImage,
-    },
-  ],
+  {
+    id: 1,
+    heading: 'test1',
+    paragraph:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+    root: '/',
+  },
+  {
+    id: 2,
+    heading: 'test2',
+    paragraph:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+    root: '/building',
+  },
+  {
+    id: 3,
+    heading: 'test3',
+    paragraph:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+    root: '/transportation',
+  },
+  {
+    id: 4,
+    heading: 'test4',
+    paragraph:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+    root: '/environment',
+  },
+  {
+    id: 5,
+    heading: 'test5',
+    paragraph:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+    root: '/medicine',
+  },
 ];
 
 export const Aims = [

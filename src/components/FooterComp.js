@@ -5,7 +5,7 @@ import { AiFillTwitterCircle, AiFillInstagram, AiFillLinkedin } from 'react-icon
 export const FooterComp = () => {
   return (
     <div name="CONTACT" className="h-[50%] px-20 py-5 bg-slate-600">
-      <div class="grid grid-cols-4 gap-10 text-white h-[80%]">
+      <div class="grid grid-cols-2 gap-32 text-white h-[80%]">
         <div>
           <p className="text-2xl font-bold">Fiyinn</p>
           <p className="text-sm">BUDGET</p>
@@ -36,21 +36,6 @@ export const FooterComp = () => {
           <div className="items-center mt-10">
             <p className="text-sm ml-2">Phone: +92 123 456789</p>
             <p className="text-sm ml-2">Email: info@gmail.com</p>
-          </div>
-        </div>
-        <div>
-          <p className="text-2xl font-bold">Flights</p>
-          <div className="items-center mt-10">
-            <p className="text-sm ml-2">Asia</p>
-            <p className="text-sm ml-2">Africa</p>
-            <p className="text-sm ml-2">Europe</p>
-          </div>
-        </div>
-        <div>
-          <p className="text-2xl font-bold">Useful Links</p>
-          <div className="items-center mt-10">
-            <p className="text-sm ml-2">Contact Us</p>
-            <p className="text-sm ml-2">About Us</p>
           </div>
         </div>
       </div>

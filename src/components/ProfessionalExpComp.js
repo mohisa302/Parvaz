@@ -1,8 +1,12 @@
-import React from "react";
-import { ButtonYellowComp } from "./ButtonYellowComp";
-import FlyImage from "../assets/fly.jpeg";
+import React from 'react';
+import { ButtonYellowComp } from './ButtonYellowComp';
+import FlyImage from '../assets/fly.jpeg';
+import { Contents } from '../constants/Data';
+import { useLocation } from 'react-router-dom';
 
 export const ProfessionalExpComp = () => {
+  const location = useLocation();
+  const Text = Contents.find((item) => item.root === location.pathname);
   return (
     <div className="h-[80%] px-20 py-[140px]">
       <div class="grid grid-cols-2 gap-5 h-[90%]">
@@ -20,27 +24,17 @@ export const ProfessionalExpComp = () => {
               <p className="text-sm">BEST CHOICE</p>
               <p className="text-3xl mt-1">
                 We Are Very Reliable<br></br>
-                <span className="text-[#3781c5]">
-                  {" "}
-                  Professional, Experienced
-                </span>
+                <span className="text-[#3781c5]"> {Text.heading}</span>
               </p>
             </div>
           </div>
 
           <p className="mt-3">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.
           </p>
-          <p className="mt-5">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries,
-          </p>
+          <p className="mt-5">{Text.paragraph}</p>
           <div className="flex">
-            <ButtonYellowComp label={"Read More"} extraStyle={"mt-10"} />
+            <ButtonYellowComp label={'Read More'} extraStyle={'mt-10'} />
           </div>
         </div>
       </div>

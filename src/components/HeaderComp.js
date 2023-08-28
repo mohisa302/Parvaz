@@ -7,7 +7,6 @@ import { useLocation } from 'react-router-dom';
 
 export const HeaderComp = () => {
   const location = useLocation();
-  console.log(location.pathname);
   const backgroundIMG = Background.find((item) => item.root === location.pathname)?.image;
   //const [currentImageIndex, setCurrentImageIndex] = useState(0);
   //const backgroundImages = [FlayInnImage1, FlayInnImage2];
@@ -28,7 +27,7 @@ export const HeaderComp = () => {
 
   return (
     <div
-      className="w-full h-[80%] bg-red-300 bg-cover bg-no-repeat"
+      className="w-full h-[80%] bg-cover bg-no-repeat"
       style={{
         backgroundImage: `url(${backgroundIMG})`,
       }}
