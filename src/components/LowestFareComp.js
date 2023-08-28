@@ -17,8 +17,7 @@ export const LowestFareComp = () => {
               <img src={item.image} className="h-[150px] w-[150px] rounded-lg" />
               <p className="mt-2 font-semibold">{item.heading}</p>
               <p className="text-sm">
-                <span className="text-gray-400">Starting from</span>{' '}
-                <spn className="text-red-400 font-semibold">{item.describtion}</spn>
+                <span className="text-gray-400">{item.describtion}</span>
               </p>
               <ButtonYellowComp label={'CHECK OUT NOW'} extraStyle={'mt-5'} />
             </div>

@@ -1,51 +1,59 @@
 import DehliImage from '../assets/india_gate.jpeg';
 
+// aims
 import icon1 from '../assets/icon1.png';
 import icon2 from '../assets/icon2.png';
 import icon3 from '../assets/icon3.png';
 import icon4 from '../assets/icon4.png';
 import icon5 from '../assets/icon5.png';
 
+//backgrounds
 import EnergyBack from '../assets/back-energy.jpg';
 import BuildingBack from '../assets/proj-buil.jpeg';
 import TransBack from '../assets/back-transport.jpg';
 import EnvBack from '../assets/back-env.jpg';
 import MediBack from '../assets/back-medicine.jpeg';
 
+//projects
+import EnergyPro from '../assets/energy-pro.jpg';
+import BuildingPro from '../assets/proj-buil.jpeg';
+import TransPro from '../assets/project tran.jpg';
+import EnvPr from '../assets/proj-env.jpg';
+
 export const LOWEST_FARE_LIST = [
   {
     id: 1,
     heading: 'Flights to Dehli',
-    price: '$42',
-    image: DehliImage,
+    describtion: '$42',
+    image: EnergyPro,
     root: '/',
   },
   {
     id: 2,
     heading: 'Flights to Dehli',
-    price: '$42',
-    image: DehliImage,
+    describtion: '$42',
+    image: BuildingPro,
     root: '/building',
   },
   {
     id: 3,
     heading: 'Flights to Dehli',
-    price: '$42',
-    image: DehliImage,
+    describtion: '$42',
+    image: TransPro,
     root: '/transportation',
   },
   {
     id: 4,
     heading: 'Flights to Dehli',
-    price: '$42',
-    image: DehliImage,
+    describtion: '$42',
+    image: EnvPr,
     root: '/environment',
   },
   {
     id: 5,
     heading: 'Flights to Dehli',
-    price: '$42',
-    image: DehliImage,
+    describtion: '$42',
+    image: MediBack,
     root: '/medicine',
   },
 ];
