@@ -1,5 +1,4 @@
 import DehliImage from '../assets/india_gate.jpeg';
-import KarachiImage from '../assets/karachi.jpeg';
 
 import icon1 from '../assets/icon1.png';
 import icon2 from '../assets/icon2.png';
@@ -13,58 +12,42 @@ import TransBack from '../assets/back-transport.jpg';
 import EnvBack from '../assets/back-env.jpg';
 import MediBack from '../assets/back-medicine.jpeg';
 
-export const Projects = [
-  [
-    {
-      id: 1,
-      heading: 'Flights to Dehli',
-      price: '$42',
-      image: DehliImage,
-    },
-  ],
-  [
-    {
-      id: 2,
-      heading: 'Flights to Karachi',
-      price: '$42',
-      image: KarachiImage,
-    },
-  ],
-  [
-    {
-      id: 3,
-      heading: 'Flights to Karachi',
-      price: '$42',
-      image: KarachiImage,
-    },
-  ],
-
-  [
-    {
-      id: 4,
-      heading: 'Flights to Karachi',
-      price: '$42',
-      image: KarachiImage,
-    },
-  ],
-
-  [
-    {
-      id: 5,
-      heading: 'Flights to Karachi',
-      price: '$42',
-      image: KarachiImage,
-    },
-  ],
-
-  [
-    {
-      id: 2,
-      heading: 'Flights to Karachi',
-      price: '$42',
-      image: KarachiImage,
-    },
-  ],
+export const LOWEST_FARE_LIST = [
+  {
+    id: 1,
+    heading: 'Flights to Dehli',
+    price: '$42',
+    image: DehliImage,
+    root: '/',
+  },
+  {
+    id: 2,
+    heading: 'Flights to Dehli',
+    price: '$42',
+    image: DehliImage,
+    root: '/building',
+  },
+  {
+    id: 3,
+    heading: 'Flights to Dehli',
+    price: '$42',
+    image: DehliImage,
+    root: '/transportation',
+  },
+  {
+    id: 4,
+    heading: 'Flights to Dehli',
+    price: '$42',
+    image: DehliImage,
+    root: '/environment',
+  },
+  {
+    id: 5,
+    heading: 'Flights to Dehli',
+    price: '$42',
+    image: DehliImage,
+    root: '/medicine',
+  },
 ];
 
 export const Background = [
