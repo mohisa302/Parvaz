@@ -5,8 +5,8 @@ import './App.css';
 import { LandingPage } from './pages/LandingPage';
 import { HeaderNavComp } from './components/HeaderNavComp';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-
-const App = () => (
+export const scrollToRef = { current: null };
+export const App = () => (
   <div>
     <BrowserRouter>
       <Routes>
@@ -21,5 +21,3 @@ const App = () => (
     </BrowserRouter>
   </div>
 );
-
-export default App;

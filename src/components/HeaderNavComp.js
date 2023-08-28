@@ -1,8 +1,13 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { scrollToRef } from '../App';
 
 export const HeaderNavComp = () => {
+  const scrollToContainer = (container) => {
+    scrollToRef.current[container].scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <>
       <div className="grid grid-cols-4 gap-2">
@@ -16,11 +21,11 @@ export const HeaderNavComp = () => {
           <NavLink to="/" className="hover:border-b-[2px] hover:border-b-yellow-400 hover:text-xl pb-2">
             <p className="text-black">HOME</p>
           </NavLink>
-          <Link to="ABOUT US" smooth={true} duration={500} className="ml-5">
+          <button onClick={() => scrollToContainer('project')} className="ml-5">
             <div className="hover:border-b-[2px] hover:border-b-yellow-400 hover:text-xl pb-2">
-              <p className="text-black">ABOUT US</p>
+              <p className="text-black">Projects</p>
             </div>
-          </Link>
+          </button>
           <NavLink to="/building" className="ml-5">
             <div className="hover:border-b-[2px] hover:border-b-yellow-400 hover:text-xl pb-2">
               <p className="text-black">Building</p>
@@ -41,11 +46,11 @@ export const HeaderNavComp = () => {
               <p className="text-black">Transportation</p>
             </div>
           </NavLink>
-          <Link to="CONTACT" smooth={true} duration={500} className="ml-5">
+          <button onClick={() => scrollToContainer('contact')} className="ml-5">
             <div className="hover:border-b-[2px] hover:border-b-yellow-400 hover:text-xl pb-2">
               <p className="text-black">Contact</p>
             </div>
-          </Link>
+          </button>
         </div>
       </div>
       <Outlet />

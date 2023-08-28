@@ -1,10 +1,19 @@
 import React from 'react';
 import { BsFacebook } from 'react-icons/bs';
 import { AiFillTwitterCircle, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
-
+import { scrollToRef } from '../App';
+import { useRef, useEffect } from 'react';
 export const FooterComp = () => {
+  const contactContainerRef = useRef(null);
+  useEffect(() => {
+    scrollToRef.current = {
+      ...scrollToRef.current,
+      contact: contactContainerRef.current,
+    };
+  }, []);
+
   return (
-    <div name="CONTACT" className="h-[50%] px-20 py-5 bg-slate-600">
+    <div name="CONTACT" className="h-[50%] px-20 py-5 bg-slate-600" ref={contactContainerRef}>
       <div class="grid grid-cols-2 gap-32 text-white h-[80%]">
         <div>
           <p className="text-2xl font-bold">Fiyinn</p>
