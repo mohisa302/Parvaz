@@ -1,30 +1,38 @@
 import React from 'react';
 import FlayInnImage1 from '../assets/back1.jpg';
-import FlayInnImage2 from '../assets/flyinn.jpeg';
-import { HeaderNavComp } from './HeaderNavComp';
-import { useState, useEffect, useRef } from 'react';
+// import FlayInnImage2 from '../assets/flyinn.jpeg';
+// import { useState, useEffect, useRef } from 'react';
+import { Background } from '../constants/Data';
+import { useLocation } from 'react-router-dom';
 
 export const HeaderComp = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const backgroundImages = [FlayInnImage1, FlayInnImage2];
-  const imageRef = useRef(null);
+  const location = useLocation();
+  console.log(location.pathname);
+  const backgroundIMG = Background.find((item) => item.root === location.pathname)?.image;
+  //const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  //const backgroundImages = [FlayInnImage1, FlayInnImage2];
+  //const imageRef = useRef(null);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
-    }, 5000);
+  //useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
+  //   }, 5000);
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
 
-  useEffect(() => {
-    const imageElement = imageRef.current;
-    imageElement.style.backgroundImage = `url(${backgroundImages[currentImageIndex]})`;
-  }, [backgroundImages, currentImageIndex]);
+  // useEffect(() => {
+  //   const imageElement = imageRef.current;
+  //   imageElement.style.backgroundImage = `url(${backgroundImages[currentImageIndex]})`;
+  // }, [backgroundImages, currentImageIndex]);
 
   return (
-    <div className="w-full h-[80%] bg-black bg-no-repeat bg-cover" ref={imageRef}>
-      <HeaderNavComp />
+    <div
+      className="w-full h-[80%] bg-red-300 bg-cover bg-no-repeat"
+      style={{
+        backgroundImage: `url(${backgroundIMG})`,
+      }}
+    >
       <div className="grid grid-cols-2 h-[80%]">
         <div className="flex items-center p-5">
           <div>
