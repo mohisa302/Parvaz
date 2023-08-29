@@ -14,7 +14,7 @@ export const FooterComp = () => {
 
   return (
     <div name="CONTACT" className="h-[50%] px-20 py-5 bg-slate-600" ref={contactContainerRef}>
-      <div class="grid grid-cols-2 gap-32 text-white h-[80%]">
+      <div className="grid grid-cols-2 gap-32 text-white h-[80%]">
         <div>
           <p className="text-2xl font-bold">Fiyinn</p>
           <p className="text-sm">BUDGET</p>

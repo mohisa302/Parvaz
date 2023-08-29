@@ -3,7 +3,7 @@ import { Aims } from '../constants/Data';
 export const ServicesComp = () => {
   return (
     <div className="h-[80%] px-20 py-20">
-      <div class="grid grid-cols-2 gap-2 h-[90%]">
+      <div className="grid grid-cols-2 gap-2 h-[90%]">
         <div>
           <p className="text-sm">BEST CHOICE</p>
           <p className="text-3xl mt-1">

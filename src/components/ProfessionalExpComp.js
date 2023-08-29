@@ -9,7 +9,7 @@ export const ProfessionalExpComp = () => {
   // const Text = Contents.find((item) => item.root === location.pathname);
   return (
     <div className="h-[80%] px-20 py-[140px]">
-      <div class="grid grid-cols-2 gap-5 h-[90%]">
+      <div className="grid grid-cols-2 gap-5 h-[90%]">
         <div className="flex justify-center">
           <div
             className="bg-contain w-[250px]"

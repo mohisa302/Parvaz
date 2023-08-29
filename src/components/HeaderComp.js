@@ -27,7 +27,8 @@ export const HeaderComp = () => {
 
   return (
     <div
-      className="w-full h-[80%] bg-cover bg-no-repeat"
+      className="bg-no-repeat bg-cover bg-center 
+      bg-green-200 w-full h-[30%] border-2"
       style={{
         backgroundImage: `url(${backgroundIMG})`,
       }}
