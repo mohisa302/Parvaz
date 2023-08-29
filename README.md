@@ -24,9 +24,9 @@
 ### Key Features <a name="key-features"></a>
 
 - **using linters**
-- **both mobile and desktop version**
-- **online avaible**
-- **popup windows**
+- **both mobile and desktop versions**
+- **online available**
+- **different pages**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
